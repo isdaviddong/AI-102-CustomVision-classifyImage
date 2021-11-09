@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>test_classifier</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\test-images\22-211430-b6d3e227-8c37-4ecb-a8e1-67251f86aec3.png" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\22-211433-8b8687c4-163a-48e7-a534-19187e9a5f02.png" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\22-211436-d9e11ff6-2daf-4246-8879-09ae43950332.png" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\22-211439-dbebd599-827e-4a48-8d26-b53ff91d3a05.png" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\22-211443-2fa2b7ab-b011-4ba5-9b5b-c72763294db8.png" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\22-211551-7ef929e0-684d-415e-a56a-4931aaf59740.png" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\22-211559-d83d309f-ab2c-4c42-a72d-cb4d6148de5d.png" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\cat1.jpg" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\cat2.jpg" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\IMG_TEST_1.jpg" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\IMG_TEST_2.jpg" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\IMG_TEST_3.jpg" />
+    <None Include="bin\Debug\netcoreapp3.1\test-images\下載.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.9" />
+  </ItemGroup>
+
+
+</Project>
